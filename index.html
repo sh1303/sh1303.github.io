@@ -3,17 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Project 1 – Interactive 2D Geometry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fdfdfd;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    video, img {
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    a {
+      font-weight: bold;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+      color: gray;
+    }
+  </style>
 </head>
+
 <body>
   <h1>Project 1 – Interactive 2D Geometry</h1>
 
-  <p>This is my submission for Project 1 – Interactive 2D Geometry.</p>
+  <p style="text-align: center;">
+    This is my submission for Project 1 – Interactive 2D Geometry.
+  </p>
 
   <h2>Description</h2>
-  <p>
+  <p style="text-align: center;">
     This project implements an interactive OpenGL application.  
     Users can move, scale, and rotate a textured square loaded from a PPM image.  
-    Pressing ‘r’ resets the square.
+    Pressing ‘r’ resets the square to its initial state.
   </p>
 
   <h2>Reset Demonstration</h2>
@@ -58,26 +91,27 @@
   </video>
 
   <h2>Texture Application</h2>
-  <p>Before applying texture:</p>
+  <p style="text-align: center;">Before applying texture:</p>
   <img src="GIFs/before texture.png" width="400">
 
-  <p>After applying brightening:</p>
-  <img src="GIFs/after brightening.png" width="400">
-
-  <p>Before applying brightening:</p>
+  <p style="text-align: center;">Before applying brightening:</p>
   <img src="GIFs/before brightening.png" width="400">
 
-  <h2>Difficulties Encountered</h2>
-  <p>
-    (Write a short paragraph here about what you found difficult.)
-  </p>
-  <h2>Download Code & Executable</h2>
-   <a href="https://drive.google.com/file/d/1UWvDJEorTjY0S3kJ4tg6lgyUrGI8xihh/view?usp=drive_link" target="_blank">Download from Google Drive</a>
+  <p style="text-align: center;">After applying brightening:</p>
+  <img src="GIFs/after brightening.png" width="400">
 
+  <h2>Difficulties Encountered</h2>
+  <p style="text-align: center;">
+    While completing Project 1 I encountered several challenges related to animation logic, shape control, optimization of the initial approach, and real-time input handling. One difficulty was accounting for all edge cases when designing the logic for smooth scaling and rotation. Although the initial setup was straightforward, debugging and improving interactivity took considerable time. Another issue was getting the animation to run smoothly without relying on continuous mouse or key input, which required understanding SDL’s event loop and decoupling logic from frame-based input. Maintaining a perfect square shape during window resizing was also tricky and required correcting for aspect ratio distortion. Texture mapping using a PPM file and applying a brightening effect without color distortion introduced challenges with pixel-level image handling. Finally, due to GitHub’s file size limitations, I had to convert large `.gif` files into `.mp4` and host the code externally via Google Drive for submission. These difficulties gave me deeper insight into OpenGL rendering, coordinate transformations, and deployment workflows.
+  </p>
+
+  <h2>Download Code & Executable</h2>
+  <p style="text-align: center;">
+    <a href="https://drive.google.com/file/d/1UWvDJEorTjY0S3kJ4tg6lgyUrGI8xihh/view?usp=drive_link" target="_blank">Download from Google Drive</a>
+  </p>
 
   <footer>
     <p>&copy; 2025 Your Name</p>
   </footer>
 </body>
 </html>
-
