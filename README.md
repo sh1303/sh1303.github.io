@@ -26,8 +26,12 @@ Proj1/
 └── Linking/
     ├── include/
     │   └── SDL3/
+    |   └── glad/
+    |   └── KHR/
+    |   └── GLFW/
     └── lib/
         └── x64/
+        └── GLFW/
 ```
 
 ---
@@ -119,4 +123,4 @@ SDL3_test.dll
 
 ---
 
-© 2025 Your Name. All rights reserved.
+
